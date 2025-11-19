@@ -1,0 +1,25 @@
+[project]
+name = "qiskit-lab"
+version = "0.1.0"
+description = "Quantum computing lab environment using Qiskit 2.x and Jupyter"
+authors = [{ name = "Denesh Kumar Mani" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Core dependencies
+dependencies = [
+    "qiskit==2.2.1",
+    "qiskit-aer==0.17.2",
+    "qiskit-ibm-runtime==0.42.0",
+    "matplotlib==3.10.7",
+    "pylatexenc==2.10",
+    "jupyter==1.1.1",
+    "ipykernel==7.0.0"
+]
+
+[tool.uv]
+python = "3.11"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
